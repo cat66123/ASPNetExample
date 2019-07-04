@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using WebApplication1.Models;
 using WebApplication1.Logic.CreateTree;
+using WebApplication1.Logic.Type;
+
 
 namespace WebApplication1.Controllers
 {
@@ -14,25 +16,12 @@ namespace WebApplication1.Controllers
     {
         public IActionResult Index()
         {
-            List<Node> list = new List<Node>() {
-                new Node {id=1,name="a",parentid=null },
-                new Node {id=2,name="b",parentid=null},
-                new Node {id=3,name="c",parentid=1 },
-                new Node {id=4,name="d",parentid=null },
-                new Node {id=5,name="e",parentid=3 },
-                new Node {id=6,name="f",parentid=2 },
-                new Node {id=7,name="g",parentid=null }
-            };
-
-            List<NewNode> rlt = TreeFns.CreateNewTree(list);
-
-            ViewBag.Cat66 = rlt;
 
             return View();
         }
 
-  
-      
+
+
 
         public IActionResult About()
         {

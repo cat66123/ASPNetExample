@@ -3,6 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/*
+ * 题目：根据行数据生成树形结构。使用lambda,linq,递归完成，使数据包含id,name,parentid,items
+            List<Node> list = new List<Node>() {
+                new Node {id=1,name="a",parentid=null },
+                new Node {id=2,name="b",parentid=null},
+                new Node {id=3,name="c",parentid=1 },
+                new Node {id=4,name="d",parentid=null },
+                new Node {id=5,name="e",parentid=3 },
+                new Node {id=6,name="f",parentid=2 },
+                new Node {id=7,name="g",parentid=null }
+            };
+
+            List<NewNode> rlt = TreeFns.CreateNewTree(list);
+
+            ViewBag.Cat66 = rlt;
+*/
 namespace WebApplication1.Logic.CreateTree
 {
     public class Node
